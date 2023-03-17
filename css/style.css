@@ -713,7 +713,7 @@ p {
 }
 
 p{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .citation{
@@ -890,6 +890,16 @@ h3 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+.address{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.address-content{
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -938,8 +948,8 @@ h3 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 20px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -949,8 +959,8 @@ h3 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1076,7 +1086,7 @@ h3 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 15px;
     }
     .close-lightbox {
         display: inline-block;
